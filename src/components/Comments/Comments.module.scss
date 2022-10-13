@@ -1,0 +1,330 @@
+@import "../../scss/variables";
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: none !important;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.root {
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 17px;
+}
+
+.avatar {
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.form {
+  width: 100%;
+
+  button {
+    margin-top: 10px;
+  }
+}
+
+.row {
+  position: relative;
+  width: 96%;
+  margin: 20px auto 10px auto;
+  border-bottom: 0.0625rem solid #d8dee6;
+  padding-bottom: 10px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  .bottom {
+    margin-top: 10px;
+    height: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .iconsBlock {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .reply {
+      p {
+        margin-left: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+  .time {
+    min-width: 80px;
+    margin-left: 15px;
+    p {
+      opacity: 0.7;
+      font-weight: 400;
+      font-size: 0.9em;
+    }
+  }
+  .info {
+    margin-left: 10px;
+    .name {
+      font-size: 1.1em;
+    }
+    .comment {
+      font-size: 1em;
+      opacity: 0.9;
+    }
+  }
+  .icons {
+    display: flex;
+    justify-content: end;
+    svg {
+      cursor: pointer;
+      opacity: 0.7;
+      width: 25px;
+      height: 25px;
+      transition: $mid-transition;
+      &:hover {
+        opacity: 1;
+      }
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+  .iconsBlock {
+    display: flex;
+    align-items: center;
+    .reply {
+      cursor: pointer;
+      margin-bottom: 3px;
+      width: 25px;
+      height: 25px;
+      opacity: 0.7;
+      transition: $mid-transition;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .like {
+    display: flex;
+    align-items: center;
+    .heart {
+      height: 22px;
+      width: 22px;
+      cursor: pointer;
+      transition: $mid-transition;
+      &:hover {
+        color: rgb(240, 89, 89);
+      }
+    }
+    p {
+      font-size: 1.1em;
+      opacity: 0.8;
+      margin-left: 5px;
+    }
+    .liked {
+      color: rgb(240, 89, 89);
+    }
+  }
+
+  .editForm {
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    @media (max-width: 600px) {
+      width: 85%;
+    }
+    .editBtn {
+      margin-left: 15px;
+      height: 35px;
+    }
+  }
+}
+
+///////// Reply Row
+
+.replyRow {
+  position: relative;
+  width: 100%;
+  margin: 20px auto 0px auto;
+  border-bottom: 0.0625rem solid #d8dee6;
+  padding-bottom: 10px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  .bottom {
+    margin-top: 0px !important;
+    height: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .iconsBlock {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .reply {
+      p {
+        margin-left: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+  .time {
+    min-width: 80px;
+    margin-left: 15px;
+    p {
+      opacity: 0.7;
+      font-weight: 400;
+      font-size: 0.9em;
+    }
+  }
+  .info {
+    margin-left: 10px;
+    .name {
+      font-size: 1.1em;
+    }
+    .comment {
+      font-size: 1em;
+      opacity: 0.9;
+    }
+  }
+  .icons {
+    display: flex;
+    justify-content: end;
+    svg {
+      cursor: pointer;
+      opacity: 0.7;
+      width: 25px;
+      height: 25px;
+      transition: $mid-transition;
+      &:hover {
+        opacity: 1;
+      }
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+  .iconsBlock {
+    display: flex;
+    align-items: center;
+    .reply {
+      cursor: pointer;
+      margin-bottom: 3px;
+      width: 25px;
+      height: 25px;
+      opacity: 0.7;
+      transition: $mid-transition;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .like {
+    display: flex;
+    align-items: center;
+    .heart {
+      height: 22px;
+      width: 22px;
+      cursor: pointer;
+      transition: $mid-transition;
+      &:hover {
+        color: rgb(240, 89, 89);
+      }
+    }
+    p {
+      font-size: 1.1em;
+      opacity: 0.8;
+      margin-left: 5px;
+    }
+    .liked {
+      color: rgb(240, 89, 89);
+    }
+  }
+
+  .replyArrow {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+  }
+  .editForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    .editBtn {
+      margin-top: 5px;
+      margin-left: 0px;
+      height: 35px;
+    }
+  }
+}
+
+.replyForm {
+  margin: 10px 17px 0 20px;
+  button {
+    margin-top: 10px;
+  }
+}
+
+.replies {
+  margin-left: 25px;
+}
+
+.skeleton {
+  width: 96%;
+  margin: 20px auto 10px auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.0625rem solid #d8dee6;
+  padding-bottom: 10px;
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  .info {
+    margin-left: 10px;
+    .name {
+      font-size: 1.1em;
+    }
+    .comment {
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    svg {
+      cursor: pointer;
+      opacity: 0.7;
+      width: 25px;
+      height: 25px;
+      transition: $mid-transition;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

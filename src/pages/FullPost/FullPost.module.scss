@@ -1,0 +1,16 @@
+.container {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  width: 80%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+  .back {
+    margin-bottom: 20px;
+    button {
+      svg {
+        font-size: 1.3em;
+      }
+    }
+  }
+}

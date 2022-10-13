@@ -1,0 +1,68 @@
+.container {
+  background-color: #fff;
+  margin-bottom: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 4px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1112px) {
+    flex-direction: column;
+  }
+  .userDetails {
+    display: flex;
+    @media (max-width: 1112px) {
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+    }
+    .userAvatar {
+      border-radius: 3px;
+      height: 250px !important;
+      width: 250px !important;
+      margin-bottom: 5px;
+      @media (max-width: 600px) {
+        height: 100px !important;
+        width: 100px !important;
+      }
+    }
+
+    .details {
+      margin-left: 15px;
+      h4 {
+        svg {
+          margin-right: 5px;
+          color: #1976d2;
+        }
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 1.5em;
+        font-weight: 300;
+        @media (max-width: 600px) {
+          font-size: 0.9em;
+        }
+        @media (max-width: 1400px) {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+
+  .chart {
+    width: 500px;
+    height: 250px;
+
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+      width: 350px;
+      height: 200px;
+    }
+    @media (max-width: 600px) {
+      width: 350px;
+      margin-top: 20px;
+    }
+    @media (max-width: 400px) {
+      width: 300px;
+    }
+  }
+}
